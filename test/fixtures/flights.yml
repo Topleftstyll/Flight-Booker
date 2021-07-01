@@ -1,13 +1,13 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  from_airport: 
-  to_airport: 
-  date: 2021-07-01 00:27:13
+  from_airport: one
+  to_airport: one
+  date: 2021-07-01 00:37:51
   duration: 1
 
 two:
-  from_airport: 
-  to_airport: 
-  date: 2021-07-01 00:27:13
+  from_airport: two
+  to_airport: two
+  date: 2021-07-01 00:37:51
   duration: 1

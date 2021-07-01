@@ -10,6 +10,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_07_01_043751) do
 
+  create_table "airports", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "flights", force: :cascade do |t|
+    t.integer "from_airport_id", null: false
+    t.integer "to_airport_id", null: false
+    t.datetime "date"
+    t.integer "duration"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["from_airport_id"], name: "index_flights_on_from_airport_id"
+    t.index ["to_airport_id"], name: "index_flights_on_to_airport_id"
+  end
+
+  add_foreign_key "flights", "airlines", column: "from_airport_id"
+  add_foreign_key "flights", "airlines", column: "to_airport_id"
 end

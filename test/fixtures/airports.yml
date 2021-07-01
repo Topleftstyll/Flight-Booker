@@ -2,8 +2,6 @@
 
 one:
   name: MyString
-  flight: one
 
 two:
   name: MyString
-  flight: two
