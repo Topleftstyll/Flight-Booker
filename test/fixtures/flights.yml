@@ -2,12 +2,12 @@
 
 one:
   from_airport: 
-  from_airport: 
-  date: 2021-07-01 00:20:32
+  to_airport: 
+  date: 2021-07-01 00:27:13
   duration: 1
 
 two:
   from_airport: 
-  from_airport: 
-  date: 2021-07-01 00:20:32
+  to_airport: 
+  date: 2021-07-01 00:27:13
   duration: 1
