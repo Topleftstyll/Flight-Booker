@@ -14,3 +14,4 @@
 # Airport.create(name: 'CAL')
 # Airport.create(name: 'KAL')
 
+Flight.create(from_airport_id: 2, to_airport_id: 5, date: "2021-07-01 04:49:20.279785000 +0000", duration: 31241234)
